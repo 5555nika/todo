@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    list-style: none;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem 5%;
+    background-color: #f2c9c9;
+}
+html{
+    font-size:65.2%;
+}
+img{
+    width: 100%;
+}
+:root{
+  --bg:#000;
+  --orange:#ff9501;
+  --green:#3cb371;
+  --grey:#a6a6a6;
+  --white:#fdfdfd;
+}
+.title {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+.desc{
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.card{
+  width: 50rem;
+  position: relative;
+  border: 1px solid var(--grey);
+  border-radius: 1rem;
+  padding: 3rem;
+  background-color: var(--white);
+}
+.empty{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 1.5rem;
+  color: var(--grey);
+}
+.none{
+  display: none !important;
+}
+.items{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--grey);
+}
+.btn{
+  padding: 0.5rem 2rem;
+  height: 2.5rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.btn-success{
+  background-color: green;
+  color: var(--white);
+}
+.btn-success:hover{
+  background-color: var(--green);
+  color: var(--white);
+}
+.btn-danger{
+  background-color: red;
+  color: var(--white);
+}
+.btn-danger:hover{
+  background-color: var(--orange);
+  color: var(--white);
+}
+#form{
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#input{
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--grey);
+  font-size: 1.5rem;
+}
+#input::placeholder{
+  color: var(--grey);
+}
+.btn-primary{
+  background-color: dodgerblue;
+  color: var(--white);
+  align-self: end;
+}
+.btn-primary:hover{
+  background-color: rgb(149, 178, 208);
+  color: var(--white);
+}
+.fa-pencil, .fa-times{
+  pointer-events: none;
+}
+.text--done{
+  text-decoration: line-through;
+  opacity: .7;
+}
